@@ -11,7 +11,11 @@ add_test (NAME testtest_${PROJECT_NAME} COMMAND ${self})
 set_target_properties(test_${PROJECT_NAME}          PROPERTIES FOLDER "${PROJECT_NAME}")
 
 
+if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
+else()
+    set_target_properties(test_${PROJECT_NAME}           PROPERTIES FOLDER "dependencies/${PROJECT_NAME}")
+endif()
 
 
 
