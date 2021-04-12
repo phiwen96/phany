@@ -22,6 +22,9 @@ endif ()
 if (NOT TARGET ph_time)
 	add_subdirectory (dependencies/ph_time)
 endif ()
+if (NOT TARGET ph_memory)
+	add_subdirectory (dependencies/ph_memory)
+endif ()
 
 if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 	
@@ -60,6 +63,6 @@ find_package (Boost 1.74 REQUIRED)
 add_subdirectory (src)
 
 
-if ((CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME OR MODERN_CMAKE_BUILD_TESTING) AND BUILD_TESTING)
+# if ((CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME OR MODERN_CMAKE_BUILD_TESTING) AND BUILD_TESTING)
 	add_subdirectory (tests)
-endif()
+# endif()
