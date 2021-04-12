@@ -10,3 +10,6 @@
 [submodule "dependencies/ph_time"]
 	path = dependencies/ph_time
 	url = https://github.com/phiwen96/ph_time
+[submodule "dependencies/ph_memory"]
+	path = dependencies/ph_memory
+	url = https://github.com/phiwen96/ph_memory
